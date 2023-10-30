@@ -46,7 +46,8 @@ jQuery(document).ready(function($) {
         768: {
           items: 2,
           nav: false,
-          loop: true
+          loop: true,
+          margin:5
         },
         992: {
           items: 3,

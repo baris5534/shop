@@ -45,7 +45,8 @@
         768: {
           items: 1,
           nav: true,
-          loop: false
+          loop: false,
+          
         },
         992: {
           items: 1,
