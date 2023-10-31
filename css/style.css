@@ -928,10 +928,54 @@ footer .liler ul~ul~ul{
        
     }
     .community{
-        
+        height: auto;
+        padding: 25px;
+        flex-wrap: wrap;
     }
+    .community .container{
+        height: auto;
+        font-size: 12px;
+    }
+    .companys h1{
+        font-size: 16px;
+        padding: 10px;
+        word-wrap: break-word;
+    }
+    .companys ul li{
+        font-size: 12px;
+    }
+    .community-forms{
+        max-width: 350px;
+        margin: 10px;
+    }
+    .community-forms input[type="text"]{
+        width: 90%;
+    }
+    .community .chech{
+        font-size: 12px;
+    }
+    .chech span{
+        width: 80%;
+    }
+    /* footer */
     footer{
-        
+        height: auto;
+    }
+    footer .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer .liler{
+        margin-left: 0;
+    }
+    footer .guide{
+        width: 100%;
+        margin-left: 0;
+        text-align: end;
+        display: block;
+    }
+    footer .guide span{
+        padding-right: 15px;
     }
     .footeralt{
         
