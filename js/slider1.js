@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       pullDrag: true,
       freeDrag: false,
   
-      margin: 70,
+      margin: 10,
       stagePadding: 0,
   
       merge: false,

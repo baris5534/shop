@@ -312,6 +312,9 @@ header #menu .profile{
     align-items: center;
     border-radius: 10px;
 }
+.products .wrapper{
+    display: none;
+}
 .clothes-cards .clt-card{
     display: flex;
     flex-direction: column;
@@ -840,13 +843,17 @@ footer .liler ul~ul~ul{
 .cd-wd{
     width: 225px;
 }
+.best-seller .owl-nav,.owl-dots{
+    display: none;
+}
 /* discount */
 .discount{
     height: auto;
 }
 .discount .container{
     display: grid;
-    grid-template-columns: 10% 10% 30% 10%;
+    grid-template-columns: 20% 20% 40% 20%;
+    padding: 30px;
     
 }
 .discount .container img{
@@ -884,25 +891,36 @@ footer .liler ul~ul~ul{
     height: auto;
 }
 .collections .collections-card{
+    height: auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 32% 32% 32%;
+    margin: auto;
 }
 .collec-cards{
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 .collec-cards .details{
-    height: 100px;
+    height: 340px;
 }
 .cards3 .details{
-    height: 200px;
+    height: 680px;
+}
+.details img{
+    width: 50px;
+}
+.details h3{
+    width: 80%;
 }
 .cards-col{
-    width: 70%;
+    width: 100%;
     height: auto;
 }
+.cards3{
+    margin-top: 5px;
+}
 .card-col1{
-    width: 70%;
+    width: 95%;
     height: 100%;
 }
 /* div kapama */
@@ -924,9 +942,15 @@ footer .liler ul~ul~ul{
     .collections{
         
     }
+    /* they-said */
     .they-said{
        
     }
+    .they-slider .owl-nav{
+        display: none;
+    }
+
+
     .community{
         height: auto;
         padding: 25px;
@@ -935,8 +959,11 @@ footer .liler ul~ul~ul{
     .community .container{
         height: auto;
         font-size: 12px;
+        grid-template-columns: 47% 1% 47%;
+        padding: 30px;
     }
     .companys h1{
+        width: 70%;
         font-size: 16px;
         padding: 10px;
         word-wrap: break-word;
@@ -952,10 +979,25 @@ footer .liler ul~ul~ul{
         width: 90%;
     }
     .community .chech{
+        width: 85%;
         font-size: 12px;
     }
     .chech span{
         width: 80%;
+    }
+    .col-hr{
+        height: 100%;
+    }
+    .community-forms .social-btn{
+        width: 80%;
+    }
+    .community-forms .social-btn a{
+        width: 80%;
+        font-size: 12px;
+    }
+    .community-forms .social-btn a~a{
+        width: 90%;
+        font-size: 12px;
     }
     /* footer */
     footer{
@@ -967,6 +1009,11 @@ footer .liler ul~ul~ul{
     }
     footer .liler{
         margin-left: 0;
+         display: grid;
+        grid-template-columns: 32% 32% 32%;
+    }
+    footer .liler ul{
+       margin-left: 50px;
     }
     footer .guide{
         width: 100%;
@@ -1094,7 +1141,7 @@ footer .liler ul~ul~ul{
         display: flex;
     }
     .promotion .container{
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 20% 50% 20%;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
@@ -1103,6 +1150,7 @@ footer .liler ul~ul~ul{
         width: 90%;
         font-size: 12px;
         font-size: 25%;
+        margin: auto;
     }
     .promotion img{
         width: 50px;
@@ -1115,7 +1163,7 @@ footer .liler ul~ul~ul{
 
     /* season-col */
     .season-col{
-        max-height: 650px;
+        max-height: 750px;
     }
     .season-col .season-slider{
         display: block;
@@ -1136,13 +1184,13 @@ footer .liler ul~ul~ul{
         flex-direction: column;
     }
     .season-slider{
-        height: 500px;
+        height: 600px;
     }
     #owl-demo-4{
-        height: 500px;
+        height: 600px;
     }
     .slider4{
-        height: 500px;
+        height: 600px;
     }
     .season-slider h2{
         padding: 30px;
@@ -1161,8 +1209,48 @@ footer .liler ul~ul~ul{
     }
     .season-slider .item{
         width: 400px;
-        height: 300px;
+        height: 350px;
     }
+    .wrapper{
+        width: 100%;
+      }
+      .carousel{
+        max-width: 350px;
+        margin: auto;
+        padding: 0 10px;
+        align-items: center;
+      }
+      .active{
+        background-color: #fff;
+      }
+      .carousel .card{
+        width: 300px;
+        height: 350px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0px 0 0;
+        font-weight: 600;
+        border-radius: 10px;
+      }
+      .carousel .card-1{
+        border-radius: 10px;
+      }
+      .carousel .card-2{
+        border-radius: 10px;
+      }
+      .carousel .card-3{
+        border-radius: 10px;
+      }
+      .wrapper .carousel .card h2{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+      }
+      .wrapper .carousel .card a{
+        width: 80%;
+        padding: 20px 30px;
+      }
+
 
     /* best seller */
     .best-seller{
@@ -1171,6 +1259,8 @@ footer .liler ul~ul~ul{
     .best-seller #owl-demo-2 .item{
         width: 310px;
     }
+
+
     /* discount */
     .discount{
         height: 250px;
@@ -1180,7 +1270,7 @@ footer .liler ul~ul~ul{
         align-items: center;
     }
     .discount .container{
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 20% 40% 20%;
         margin: auto;
        align-items: center;
     }
@@ -1193,9 +1283,16 @@ footer .liler ul~ul~ul{
     }
     .discount .contents-text{
         width: auto;
+        font-size: 12px;
     }
     .discount .contents-text h1,h3{
         margin: 0px 0px;
+    }
+    .contents-text h1{
+        font-size: 12px;
+    }
+    .contents-text h3{
+        font-size: 10px;
     }
     .discount .contents-text a{
         width: 120px;
@@ -1204,7 +1301,17 @@ footer .liler ul~ul~ul{
 
     /* products */
     .products{
-        height: 500px;
+        height: auto;
+    }
+    .products .wrapper{
+        height: 400px;
+        display: block;
+    }
+    .products .wrapper .owl-stage-outer{
+        height: 400px;
+    }
+    .clothes{
+        
     }
     .products .clothes ul li{
         font-size: 14px;
@@ -1212,15 +1319,125 @@ footer .liler ul~ul~ul{
     .products .clothes ul li a{
         padding: 10px;
     }
-    .clothes-cards{
+    .products .clothes-cards{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        grid-template-columns: 100%;
     }
-
-    /* collections */
-    .collections .collections-card{
+    .clothes-cards .wrapper .cltcard{
+        width: 230px;
+        height: 250px;
+        color: #000000;
+    }
+    .clothes-cards .clt-card{
         display: none;
     }
+    .wrapper .clt-card{
+        display: block;
+    }
+    .clothes-cards .wrapper{
+        height: 350px;
+    }
+    .clothes-cards .clt-card a{
+        text-decoration: none;
+        color: #000000;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 25px;
+        font-size: 10px;
+    }
+    .clothes-cards .active{
+        background-color: #F7F6F0;
+    }
+
+
+    /* collections */
+    .collections .collections-card .card-col1{
+        display: none;
+    }
+    .collections .wrapper, .collections .owl-carousel, .collections .owl-stage-outer{
+        height: 700px;
+    }
+    .collections  .wrapper  .card-col1{
+        height: 750px;
+        display: block;
+    }
+    .collections .wrapper .owl-carousel{
+        display: block;
+    }
+    .collections .collections-card{
+        height: 850px;
+        flex-direction: row;
+        display: block;
+    }
+    .collections-card{
+        height: 450px;
+        flex-direction: row;
+    }
+    .collections .wrapper .card-col1{
+        width: 250px;
+        height: 450px;
+    }
+    .collections .wrapper .collec-cards{
+        width: 250px;
+        height: 350px;
+        margin: 5px;
+    }
+    .collections .wrapper .cards-col{
+        width: 250px;
+        height: 450px;
+    }
+    .collections  .wrapper .cards3{
+        height: 750px;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-image: url(../images/SmartSelect_20230715_150946_Instagram\ 1.svg);
+    }
+    .collections .wrapper .cards1{
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-image: url(../images/SmartSelect_20230715_144134_Instagram\ 1.svg);
+    }
+    .collections .wrapper .cards2{
+        
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-image: url(../images/SmartSelect_20230715_151533_Instagram\ 1.svg);
+    }
+    .collections .wrapper .cards4{
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-image: url(../images/SmartSelect_20230715_150433_Instagram\ 1.svg);
+    }
+    .collections  .wrapper .cards5{
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-image: url(../images/SmartSelect_20230715_143815_Instagram\ 1.svg);
+    }
+    .collections  .wrapper .cards3 .details{
+        height: 690px;
+    }
+    .collections  .wrapper .details{
+        height: 340px;
+        display: flex;
+        align-items: end;   
+        justify-content: space-between;
+    }
+    .collections   .wrapper .details h3{
+        width: 60%;
+        margin: 10px;
+    }
+    .collections .wrapper .details img{
+        width: 15px;
+        background-color: #F7F6F0;
+        padding: 10px;
+        border-radius: 10px 0 0 0;
+    }
+   .collections .wrapper .owl-carousel .owl-item img{
+        width: 60px;
+    }
+
+
 
     /* they-said */
     .they-said #owl-example-3{
@@ -1243,7 +1460,7 @@ footer .liler ul~ul~ul{
     }
     .they-slider .slider2 .owl-carousel .owl-stage {
         display: flex;
-      }
+    }
       .they-slider .slider2 .owl-cards2{
         width: 300px;
         height: 630px;
@@ -1278,9 +1495,8 @@ footer .liler ul~ul~ul{
       }
     /* community */
     .community{
-        height: 800px;
+        height: auto;
         font-size: 12px;
-        padding: 50px;
     }
     .community .container{
         display: flex;
@@ -1352,10 +1568,11 @@ footer .liler ul~ul~ul{
         margin-left: 0;
     }
     footer .guide{
-        width: 65%;
+        width: 80%;
         margin-left: 0;
         margin: 10px auto;
         font-size: 12px;
+        display: block;
     }
 
     /* footer alt */
@@ -1370,7 +1587,7 @@ footer .liler ul~ul~ul{
        
     }
     .season-col{
-        
+
     }
     .best-seller{
         
@@ -1379,13 +1596,13 @@ footer .liler ul~ul~ul{
         
     }
     .products{
-        display: none;
+        
     }
     .collections{
-        
+    
     }
     .they-said{
-        
+       
     }
     .community{
         
@@ -1394,6 +1611,10 @@ footer .liler ul~ul~ul{
         
     }
     .footeralt{
-       
+        
     }
+
+
+
+    
 }

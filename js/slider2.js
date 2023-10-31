@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         autoplay:false,  
         autoplayTimeout:1000,
         autoplayHoverPause:false,    
-    
+    margin:30,
       items: 3,
       loop: true,
       center: false,
@@ -39,17 +39,20 @@ jQuery(document).ready(function($) {
         },
         480: {
           items: 1,
-          nav: false
+          nav: false,
+          margin:30
         },
         768: {
           items: 2,
           nav: true,
-          loop: true
+          loop: true,
+          margin:30
         },
         992: {
           items: 3,
           nav: true,
-          loop: true
+          loop: true,
+          margin:30
         }
       },
       responsiveRefreshRate: 200,
