@@ -351,6 +351,9 @@ header #menu .profile{
     
     gap: 20px;
 }
+.collections .wrapper{
+    display: none;
+}
 .card-col1{
     width: 410px;
     height: 700px;
@@ -679,7 +682,7 @@ footer .liler ul~ul~ul{
     padding-top: 15px;
 }
 
-@media screen and ( max-width: 1024px){
+@media screen and ( max-width: 1024px) and (min-width:431px){
     h1{
         font-size: 24px;
     }
@@ -1031,7 +1034,7 @@ footer .liler ul~ul~ul{
 
 
     
-@media (max-width: 425px) {
+@media (max-width: 430px) {
     h1{
         font-size: 24px;
     }
@@ -1355,6 +1358,9 @@ footer .liler ul~ul~ul{
     .collections .collections-card .card-col1{
         display: none;
     }
+    .collections .wrapper{
+        display: block;
+    }
     .collections .wrapper, .collections .owl-carousel, .collections .owl-stage-outer{
         height: 700px;
     }
@@ -1369,6 +1375,7 @@ footer .liler ul~ul~ul{
         height: 850px;
         flex-direction: row;
         display: block;
+        margin: 0 -20%;
     }
     .collections-card{
         height: 450px;
