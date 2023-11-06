@@ -52,7 +52,7 @@ header  ul li{
     list-style-type: none;
     display: inline-flex; 
     justify-content: space-between; 
-    padding: 65px 20px;  
+    padding: 65px 15px;  
 }
 header ul li a{
     text-decoration: none;
@@ -201,7 +201,7 @@ header #menu .profile{
     display: flex;
     flex: 1 0 auto;
     width: 500px;
-    margin: 10px;
+    margin: 5px;
   }
   .owl-carousel .item, .thumbnail{
   }
@@ -431,7 +431,7 @@ header #menu .profile{
     display: flex;
   }
   .they-slider .slider2 .owl-cards2{
-    width: 400px;
+    width: 80%;
     height: 630px;
     background-color: #F7F6F0;
     align-items: center;
@@ -499,7 +499,7 @@ header #menu .profile{
     list-style: none;
     line-height: 60px;
    align-items: center;
-   font-size: 24px;
+   font-size: 20px;
 }
 .community .companys ul li{
     height: 25px;
@@ -539,7 +539,7 @@ header #menu .profile{
     
 }
 .community-forms span{
-    width: 350px;
+    width: 100%;
 }
 .community-forms ::placeholder{
     color: #000000;
@@ -598,7 +598,7 @@ header #menu .profile{
         /* padding: 15px 350px; */
 }
 .community-forms .social-btn a~a{
-    width: 350px;
+    width: 330px;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -642,9 +642,10 @@ footer .liler{
     margin-left: 50px;
     font-size: 16px;
     padding-top: 30px;
+    text-align: left;
 }
 footer .liler ul{
-    width: 100px;
+    width: auto;
     margin-left: 100px;
 }
 footer .liler ul li{
@@ -682,7 +683,7 @@ footer .liler ul~ul~ul{
     padding-top: 15px;
 }
 
-@media screen and ( max-width: 1024px) and (min-width:431px){
+@media screen and ( max-width: 1280px) and (min-width:431px){
     h1{
         font-size: 24px;
     }
@@ -696,7 +697,7 @@ footer .liler ul~ul~ul{
         font-size: 12px;
     }
     .container{
-        max-width: 900px;
+        max-width: 1100px;
         padding: 0 50px;
     }
     header .container{
@@ -706,6 +707,7 @@ footer .liler ul~ul~ul{
         justify-content: space-between
     }
     header .logo{
+        float: left;
         align-items:end ;
         text-align: center;
         padding: 50px 0;
@@ -714,6 +716,7 @@ footer .liler ul~ul~ul{
         display: none;
     }
     nav .leftnav .menu-toggle{
+        float: right;
        padding: 50px;
     }
     nav .leftnav .profile{
@@ -792,7 +795,7 @@ footer .liler ul~ul~ul{
     display: flex;
 }
 .promotion h1,h2,h3{
-    font-size: 10px;
+    
 }
 .promotion .container{
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -800,7 +803,7 @@ footer .liler ul~ul~ul{
     align-items: center;
 }
 .promotion .container .contents-text{
-    width: 90%;
+    width: 100%;
     font-size: 12px;
 }
 .promotion img{
@@ -856,15 +859,18 @@ footer .liler ul~ul~ul{
 .discount .container{
     display: grid;
     grid-template-columns: 20% 20% 40% 20%;
-    padding: 30px;
-    
+    padding: 30px 5%;
+    align-items: center;
 }
 .discount .container img{
-    width: 100px;
+    width: 60%;
     object-fit: contain;
+    margin: auto;
 }
 .discount .contents-text{
-    width: 200px;
+    margin: auto;
+    text-align: center;
+    width: 70%;
 }
 .discount .contents-text a{
     font-size: 10px;
@@ -952,7 +958,12 @@ footer .liler ul~ul~ul{
     .they-slider .owl-nav{
         display: none;
     }
-
+    .they-slider .owl-item{
+        margin-left: 0px;
+    }
+    .they-slider #owl-example-3 .owl-item{
+        width: 330px;
+    }
 
     .community{
         height: auto;
@@ -986,7 +997,7 @@ footer .liler ul~ul~ul{
         font-size: 12px;
     }
     .chech span{
-        width: 80%;
+        /* width: 80%; */
     }
     .col-hr{
         height: 100%;
@@ -1055,7 +1066,8 @@ footer .liler ul~ul~ul{
         grid-template-columns: 1fr 1fr;
         align-items: center;
         flex-direction: row-reverse;
-        justify-content: space-between
+        justify-content: space-between;
+        display: flex;
     }
     header .logo{
         align-items:end ;
@@ -1066,7 +1078,9 @@ footer .liler ul~ul~ul{
         display: none;
     }
     nav .leftnav .menu-toggle{
-       padding: 50px;
+       padding: 60px 20px;
+       display: flex;
+       justify-content: end;
     }
     nav .leftnav .profile{
         
@@ -1262,6 +1276,9 @@ footer .liler ul~ul~ul{
     .best-seller #owl-demo-2 .item{
         width: 310px;
     }
+    .best-seller  .owl-stage-outer .owl-stage .owl-item{
+        width: 320px;
+    }
 
 
     /* discount */
@@ -1311,7 +1328,7 @@ footer .liler ul~ul~ul{
         display: block;
     }
     .products .wrapper .owl-stage-outer{
-        height: 400px;
+        height: 480px;
     }
     .clothes{
         
@@ -1323,11 +1340,18 @@ footer .liler ul~ul~ul{
         padding: 10px;
     }
     .products .clothes-cards{
+        height: auto;
         display: flex;
         flex-direction: column;
         grid-template-columns: 100%;
+        padding: 2%;
     }
     .clothes-cards .wrapper .cltcard{
+        width: 230px;
+        height: 250px;
+        color: #000000;
+    }
+    .clothes-cards .wrapper .owl-item{
         width: 230px;
         height: 250px;
         color: #000000;
@@ -1339,7 +1363,8 @@ footer .liler ul~ul~ul{
         display: block;
     }
     .clothes-cards .wrapper{
-        height: 350px;
+        height: auto;
+        margin-top: 5%;
     }
     .clothes-cards .clt-card a{
         text-decoration: none;
@@ -1382,16 +1407,19 @@ footer .liler ul~ul~ul{
         flex-direction: row;
     }
     .collections .wrapper .card-col1{
-        width: 250px;
+        width: 95%;
         height: 450px;
     }
+    .collections .wrapper .owl-stage-outer .owl-item{
+        width: 400px;
+    }
     .collections .wrapper .collec-cards{
-        width: 250px;
+        width: 90%;
         height: 350px;
         margin: 5px;
     }
     .collections .wrapper .cards-col{
-        width: 250px;
+        width: 90%;
         height: 450px;
     }
     .collections  .wrapper .cards3{
@@ -1469,7 +1497,7 @@ footer .liler ul~ul~ul{
         display: flex;
     }
       .they-slider .slider2 .owl-cards2{
-        width: 300px;
+        width: 90%;
         height: 630px;
         background-color: #F7F6F0;
         align-items: center;
@@ -1506,6 +1534,7 @@ footer .liler ul~ul~ul{
         font-size: 12px;
     }
     .community .container{
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -1516,8 +1545,10 @@ footer .liler ul~ul~ul{
     }
     .community .companys ul li{
         width: 100%;
+        height: 50px;
         font-size: 12px;
         margin-top: 0;
+        line-height: 20px;
     }
     .community .companys img{
         width: 14px;
@@ -1580,6 +1611,9 @@ footer .liler ul~ul~ul{
         margin: 10px auto;
         font-size: 12px;
         display: block;
+    }
+    footer .guide span{
+        margin-left: 5%;
     }
 
     /* footer alt */

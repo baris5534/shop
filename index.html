@@ -23,15 +23,15 @@
             <div class="leftnav" id="menu">
                 <ul>
                     <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
-                    <li><a href="#" class="li-active">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">SALE</a></li>
+                    <li><a href="#" class="li-active">Anasayfa</a></li>
+                    <li><a href="#urunler">Ürünler</a></li>
+                    <li><a href="#kategori">Kategoriler</a></li>
+                    <li><a href="#satis">Satışlar</a></li>
                     <div class="profile">
                         <ul>
                             <li>
                                 <form action="#">
-                                    <input type="text" name="" id="" placeholder="Search" class="search-icon">
+                                    <input type="text" name="" id="" placeholder="Ara" class="search-icon">
                                 </form>
                             </li>
                             <li><a href="#">
@@ -49,14 +49,14 @@
                 
             </div>
             <div class="logo">
-               <p> MEJIWOO</p>
-                <p>미지우</p>
+               <p> SİRİUS</p>
+                <p>TEDARİK</p>
             </div>
             <div class="profile">
                 <ul>
                     <li>
                         <form action="#">
-                            <input type="text" name="" id="" placeholder="Search" class="search-icon">
+                            <input type="text" name="" id="" placeholder="Ara" class="search-icon">
                         </form>
                     </li>
                     <li><a href="#">
@@ -79,11 +79,11 @@
                 <img src="./images/image 21.svg" alt="">
                 <img src="./images/image 7.svg" alt="" class="none">
                 <div class="contents-text">
-                    <h1>MEJIWOO</h1>
-                    <h2>미지우 </h2>
+                    <h1>SİRİUS</h1>
+                    <h2>TEDARİK</h2>
                     <hr>
-                    <h3>make your everyday look prettier
-                        with MEJIWOO Korean Made</h3>
+                    <h3>Günlük hayatınızın daha güzel görünmesini sağlayın
+                        MEJIWOO Kore Yapımı ile</h3>
                 </div>
                 <img src="./images/image 20.svg" alt="" class="none">
                 <img src="./images/image 10.svg" alt="">
@@ -94,23 +94,23 @@
     <div class="season-col">
         <div class="container">
             <div class="season-text">
-                <h1>Season Collections</h1>
+                <h1>Sezon Koleksiyonları</h1>
             </div>
             <div class="season-category">
                 <div class="category-spring card">
                     <img src="./images/Frame 4.svg" alt="">
-                    <h2>SPRING</h2>
-                    <a href="#">MORE</a>
+                    <h2>BAHAR</h2>
+                    <a href="#">DAHA</a>
                 </div>
                 <div class="category-spring card">
                     <img src="./images/Frame 5.svg" alt="">
-                    <h2>SUMMER</h2>
-                    <a href="#">MORE</a>
+                    <h2>YAZ</h2>
+                    <a href="#">DAHA</a>
                 </div>
                 <div class="category-spring card">
                     <img src="./images/Frame 6.svg" alt="">
-                    <h2>WINTER</h2>
-                    <a href="#">MORE</a>
+                    <h2>KIŞ</h2>
+                    <a href="#">DAHA</a>
                 </div>
             </div>
              <div class="season-slider">
@@ -122,22 +122,22 @@
                            <div class="card card-1">
                             <div class="category-spring card">
                                 <img src="./images/Frame 4.svg" alt="">
-                                <h2>SPRING</h2>
-                                <a href="#">MORE</a>
+                                <h2>BAHAR</h2>
+                                <a href="#">DAHA</a>
                             </div>
                            </div>
                            <div class="card card-2">
                             <div class="category-spring card">
                                 <img src="./images/Frame 5.svg" alt="">
-                                <h2>SPRING</h2>
-                                <a href="#">MORE</a>
+                                <h2>YAZ</h2>
+                                <a href="#">DAHA</a>
                             </div>
                            </div>
                            <div class="card card-3">
                             <div class="category-spring card">
                                 <img src="./images/Frame 6.svg" alt="">
-                                <h2>SPRING</h2>
-                                <a href="#">MORE</a>
+                                <h2>KIŞ</h2>
+                                <a href="#">DAHA</a>
                             </div>
                            </div>
                         </div>
@@ -152,7 +152,9 @@
                         responsive: {
                           0:{
                             items:1,
-                            nav: false
+                            nav: false,
+                            margin:120,
+                            padding:100,
                           },
                           600:{
                             items:2,
@@ -175,10 +177,10 @@
 
 
 
-    <div class="best-seller">
+    <div class="best-seller" id="urunler">
         <div class="container">
             <div class="best-text">
-                <h1>Our Best Seller</h1>
+                <h1>En Çok Satan Ürünümüz</h1>
             </div>
             <div class="latest-blog-posts bg-white pt60 pb60">
                 <div class="">
@@ -190,7 +192,7 @@
                       <div class="caption">
                         
                         <p itemprop="text" class="flex-text text-muted">
-                            Euphoria Crop Blouse <br>
+                            Avrupa Crop Bluz <br>
                             Rp. 125.000</p>
                       </div>
                     </article>
@@ -202,7 +204,7 @@
                       <div class="caption">
                        
                         <p itemprop="text" class="flex-text text-muted">
-                            Venus Halter Dress <br>
+                            Venüs Boyundan Bağlamalı Elbise <br>
                             Rp. 180.000</p>                 
               
                       </div>
@@ -215,7 +217,7 @@
                       <div class="caption">
                         
                         <p itemprop="text" class="flex-text text-muted">
-                            Snap Pure Blouse <br>
+                            Çıtçıtlı Saf Bluz <br>
                             Rp. 129.000
                         </p>
                     
@@ -240,29 +242,29 @@
                     <img src="./images/image 3.svg" alt="" class="none">
                     <img src="./images/image 4.svg" alt="">
                     <div class="contents-text">
-                        <h1>Get 50% Off</h1>
-                        <h3>for all new product purchases
-                            min. purchase Rp. 350.000</h3>
-                        <a href="#">SHOP NOW</a>
+                        <h1>%50 İndirim Kazanın</h1>
+                        <h3>tüm yeni ürün alımlarında
+                            dk. Rp'yi satın alın. 350.000</h3>
+                        <a href="#">ŞİMDİ SATIN AL</a>
                     </div>
                     <img src="./images/image 5.svg" alt="">
                 
             </div>
     </div>
 
-    <div class="products">
+    <div class="products" id="kategori">
         <div class="container">
             <div class="products-text">
-                <h1>Our Products</h1>
+                <h1>Bizim Ürünlerimiz</h1>
             </div>
             <div class="clothes">
                 <ul>
-                    <li class="clothes-active"><a href="#">Top</a></li>
-                    <li><a href="#">Bottom</a></li>
-                    <li><a href="#">Dress</a></li>
-                    <li><a href="#">Set</a></li>
-                    <li><a href="#">Knit</a></li>
-                    <li><a href="#">Outer</a></li>
+                    <li class="clothes-active"><a href="#">Üst</a></li>
+                    <li><a href="#">Alt</a></li>
+                    <li><a href="#">Elbise</a></li>
+                    <li><a href="#">Kombin</a></li>
+                    <li><a href="#">Örgülü</a></li>
+                    <li><a href="#">Dış</a></li>
                 </ul>
                 <div class="clothes-cards">
                     
@@ -271,21 +273,21 @@
                                 <div class="clt-card">
                                     <img src="./images/Frame 4(1).svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
                                 <div class="clt-card">
                                     <img src="./images/Frame 17.svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
                                 <div class="clt-card">
                                     <img src="./images/Frame 18.svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
@@ -296,21 +298,21 @@
                                 <div class="clt-card">
                                     <img src="./images/Frame 19.svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
                                 <div class="clt-card">
                                     <img src="./images/Frame 20.svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
                                 <div class="clt-card">
                                     <img src="./images/Frame 21.svg" alt="">
                                     <div class="clt-name">
-                                        <span>Eto V Neck Yellow</span>
+                                        <span>Eto V Yaka Sarı</span>
                                         <span>Rp. 129.000</span>
                                     </div>
                                 </div>
@@ -318,7 +320,7 @@
                          </div>
                          <script>
                           $(".carousel").owlCarousel({
-                            margin: 23,
+                            margin: 30,
                             loop: true,
                             autoplay: false,
                             autoplayTimeout: 2000,
@@ -326,7 +328,8 @@
                             responsive: {
                               0:{
                                 items:1,
-                                nav: false
+                                nav: false,
+                                
                               },
                               600:{
                                 items:2,
@@ -343,42 +346,42 @@
                     <div class="clt-card">
                         <img src="./images/Frame 4(1).svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
                     <div class="clt-card">
                         <img src="./images/Frame 17.svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
                     <div class="clt-card">
                         <img src="./images/Frame 18.svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
                     <div class="clt-card">
                         <img src="./images/Frame 19.svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
                     <div class="clt-card">
                         <img src="./images/Frame 20.svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
                     <div class="clt-card">
                         <img src="./images/Frame 21.svg" alt="">
                         <div class="clt-name">
-                            <span>Eto V Neck Yellow</span>
+                            <span>Eto V Yaka Sarı</span>
                             <span>Rp. 129.000</span>
                         </div>
                     </div>
@@ -387,17 +390,17 @@
         </div>
     </div>
 
-    <div class="collections">
+    <div class="collections" id="satis">
         <div class="container">
             <div class="collections-text">
-                <h1>Our Featured Collections</h1>
+                <h1>Öne Çıkan Koleksiyonlarımız</h1>
             </div>
             <div class="collections-card">
                 <div class="card-col1">
                     <div class="collec-cards cards1">
                         <div class="details">
                             <h3>
-                                COLORFUL KNITWEAR SERIES
+                                RENKLİ TRİKO SERİSİ
                             </h3>
                             <img src="./images/Group.svg" alt="">
                         </div>
@@ -405,7 +408,7 @@
                     <div class="collec-cards cards2">
                         <div class="details">
                             <h3>
-                                TOP PANTS SERIES
+                                ÜST PANTOLON SERİSİ
                             </h3>
                             <img src="./images/Group.svg" alt="">
                         </div>
@@ -415,7 +418,7 @@
                     <div class="cards-col cards3">
                         <div class="details">
                             <h3>
-                                JIWOO MADE SPECIAL SERIES
+                                JIWOO ÖZEL SERİ YAPTI
                             </h3>
                             <img src="./images/Group.svg" alt="">
                         </div>
@@ -425,7 +428,7 @@
                     <div class="collec-cards cards4">
                         <div class="details">
                             <h3>
-                                FRESHIDER TOP SERIES
+                                FRESHIDER TOP SERİSİ
                             </h3>
                             <img src="./images/Group.svg" alt="">
                         </div>
@@ -433,7 +436,7 @@
                     <div class="collec-cards cards5">
                         <div class="details">
                             <h3>
-                                SWEET DRESSES SERIES
+                                TATLI ELBİSELER SERİSİ
                             </h3>
                             <img src="./images/Group.svg" alt="">
                         </div>
@@ -446,7 +449,7 @@
                                 <div class="collec-cards cards1">
                                     <div class="details">
                                         <h3>
-                                            COLORFUL KNITWEAR SERIES
+                                            RENKLİ TRİKO SERİSİ
                                         </h3>
                                         <img src="./images/Group.svg" alt="">
                                     </div>
@@ -454,7 +457,7 @@
                                 <div class="collec-cards cards2">
                                     <div class="details">
                                         <h3>
-                                            TOP PANTS SERIES
+                                            ÜST PANTOLON SERİSİ
                                         </h3>
                                         <img src="./images/Group.svg" alt="">
                                     </div>
@@ -464,7 +467,7 @@
                                 <div class="cards-col cards3">
                                     <div class="details">
                                         <h3>
-                                            JIWOO MADE SPECIAL SERIES
+                                            JIWOO ÖZEL SERİ YAPTI
                                         </h3>
                                         <img src="./images/Group.svg" alt="">
                                     </div>
@@ -474,7 +477,7 @@
                                 <div class="collec-cards cards4">
                                     <div class="details">
                                         <h3>
-                                            FRESHIDER TOP SERIES
+                                            FRESHIDER TOP SERİSİ
                                         </h3>
                                         <img src="./images/Group.svg" alt="">
                                     </div>
@@ -482,7 +485,7 @@
                                 <div class="collec-cards cards5">
                                     <div class="details">
                                         <h3>
-                                            SWEET DRESSES SERIES
+                                            TATLI ELBİSELER SERİSİ
                                         </h3>
                                         <img src="./images/Group.svg" alt="">
                                     </div>
@@ -493,7 +496,7 @@
                  </div>
                  <script>
                     $(".carousel").owlCarousel({
-                      margin: 23,
+                      margin: 50,
                       loop: true,
                       autoplay: false,
                       autoplayTimeout: 2000,
@@ -523,7 +526,7 @@
     <div class="they-said">
         <div class="container">
             <div class="they-said-text">
-                <h1>What They Said</h1>
+                <h1>Ne Dediler</h1>
             </div>
             <div class="they-slider">
                 <div id="owl-example-3" class="owl-carousel slider2">
@@ -532,21 +535,21 @@
                         <span class="name">Essence Long Denim</span>
                         <span class="stars"><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""></span>
                         <span class="name2">-Lisa-</span>
-                        <span class="comments">“I like this pants. Its fit and perfect for me. The material is so comfortable that it can be used anywhere. It is also suitable to be combined with all types of my clothes.”</span>
+                        <span class="comments">“Bu pantolonu beğendim. Benim için uygun ve mükemmel. Malzeme o kadar rahat ki her yerde kullanılabilir. Ayrıca her türlü kıyafetim ile kombinlenmeye uygundur.”</span>
                     </div>
                     <div class="owl-cards2">
                         <img src="./images/336041146_885723899162918_747021629966753177_n 2.svg" alt="" class="manken">
                         <span class="name">Andcable Knit Top</span>
                         <span class="stars"><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""></span>
                         <span class="name2">-Celine-</span>
-                        <span class="comments">“I like knitted materials. I bought this shirt because the design is very pretty and comfortable to wear casually. The material is also neat and good. I love shopping here and I’ll be a frequent customer at this store.”</span>
+                        <span class="comments">“Bu pantolonu beğendim. Benim için uygun ve mükemmel. Malzeme o kadar rahat ki her yerde kullanılabilir. Ayrıca her türlü kıyafetim ile kombinlenmeye uygundur.”</span>
                     </div>
                     <div class="owl-cards2">
                         <img src="./images/336041146_885723899162918_747021629966753177_n 1.svg" alt="" class="manken">
                         <span class="name">Candy Stripe Boxy</span>
                         <span class="stars"><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""><img src="images/noto_star.svg" alt=""></span>
                         <span class="name2">-Tiffany-</span>
-                        <span class="comments">“This shirt is very pretty and nice. The color is cute too. At first I bought it as a present for my friend but I also wanted it so we ended up going out wearing twin clothes haha.”</span>
+                        <span class="comments">“Bu pantolonu beğendim. Benim için uygun ve mükemmel. Malzeme o kadar rahat ki her yerde kullanılabilir. Ayrıca her türlü kıyafetim ile kombinlenmeye uygundur.”</span>
                     </div>
                 </div>
             </div>
@@ -557,35 +560,35 @@
         <div class="container">
             <div class="companys">
                 <h1>
-                    Get more benefits 
-                      by  Sign Up & Join 
-                    Mejiwoo Community!
+                    Daha fazla avantaj elde edin
+                    Kayıt Ol ve Katıl
+                  Mejiwoo Topluluğu!
                 </h1>
                 <ul>
-                    <li><img src="./images/Vector(3).svg" alt="">FREE Special Gift to a new member</li>
-                    <li><img src="./images/Vector(3).svg" alt="">Get 2x JIWOO Points to purchase items</li>
-                    <li><img src="./images/Vector(3).svg" alt="">Get special voucher code every month </li>
-                    <li><img src="./images/Vector(3).svg" alt="">Claim Voucher Disc. Up To 50% </li>
+                    <li><img src="./images/Vector(3).svg" alt="">Yeni üyeye ÜCRETSİZ Özel Hediye</li>
+                    <li><img src="./images/Vector(3).svg" alt="">Öğe satın almak için 2 kat JIWOO Puanı kazanın</li>
+                    <li><img src="./images/Vector(3).svg" alt="">Her ay özel kupon kodu alın</li>
+                    <li><img src="./images/Vector(3).svg" alt="">%50'ye kadar Kupon Diskini Talep Edin. </li>
                 </ul>
             </div>
             <div class="col-hr">
                 <hr>
             </div>
             <div class="community-forms">
-                <input type="text" name="full-name" id="" placeholder="Full Name">
-                <input type="text" name="full-name" id="" placeholder="Email Adress">
-                <input type="text" name="full-name" id="" placeholder="Password">
+                <input type="text" name="full-name" id="" placeholder="İsim Soyisim">
+                <input type="text" name="full-name" id="" placeholder="Eposta Adresi">
+                <input type="text" name="full-name" id="" placeholder="Şifre">
                 <div class="chech">
                     <input type="checkbox" name="form" id="">
-                    <span>I agree to all the Terms and Privacy Policy</span>
+                    <span>Tüm Şartları ve Gizlilik Politikasını kabul ediyorum</span>
                 </div>
-                <a href="#">SIGN UP</a>
+                <a href="#">Giriş Yap</a>
                 <div class="or">
-                    <hr>Or<hr>
+                    <hr>YADA<hr>
                 </div>
                 <div class="social-btn">
-                    <a href="#"><img src="./images/flat-color-icons_google.svg" alt="">SIGN UP WITH GOOGLE</a>
-                    <a href="#"><img src="./images/logos_facebook.svg" alt="">SIGN UP WITH FACEBOOK</a>
+                    <a href="#"><img src="./images/flat-color-icons_google.svg" alt="">GOOGLE İLE GİRİŞ YAP</a>
+                    <a href="#"><img src="./images/logos_facebook.svg" alt="">FACEBOOK İLE GİRİŞ YAP</a>
                 </div>
             </div>
         </div>
@@ -594,27 +597,27 @@
     <footer>
         <div class="container">
             <div class="logo">
-                <p>MEJIWOO</p>
-                <p>미지우</p>
+                <p>SİRİUS</p>
+                <p>TEDARİK</p>
             </div>
             <div class="liler">
                 <ul>
-                    <li><a href="#"><b>About Us</b></a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Offical Store</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#"><b>Hakkımızda</b></a></li>
+                    <li><a href="#">Haberler</a></li>
+                    <li><a href="#">Resmi Mağaza</a></li>
+                    <li><a href="#">Şirket</a></li>
+                    <li><a href="#">Kariyerler</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><b>Get Help</b></a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Payment</a></li>
-                    <li><a href="#">Returnes</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#"><b>Yardım Almak</b></a></li>
+                    <li><a href="#">SSS</a></li>
+                    <li><a href="#">Nakliye</a></li>
+                    <li><a href="#">ödeme</a></li>
+                    <li><a href="#">İadeler</a></li>
+                    <li><a href="#">Bize Ulaşın</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><b>Follow Us</b></a></li>
+                    <li><a href="#"><b>Bizi Takip Edin</b></a></li>
                     <li><a href="#"><img src="./images/fb.svg" alt=""></a><a href="#"><img src="./images/ig.svg" alt=""></a><a href="#"><img src="./images/twt.svg" alt=""></a><a href="#"><img src="./images/yt.svg" alt=""></a></li>
                     <li></li>
                     <li></li>
@@ -624,13 +627,13 @@
            
         </div>
          <div class="guide">
-                <span>Guide</span>
-                <span>Terms & Conditions</span>
-                <span>Privacy Policy</span>
+                <span>Rehber</span>
+                <span>Şartlar Ve Koşullar</span>
+                <span>Gizlilik Politikası</span>
             </div>
     </footer>
     <div class="footeralt">
-        <span>2023 MEJIWOO. All Rights Reserved</span>
+        <span>2023 SİRİUS. Her hakkı saklıdır</span>
     </div>
 
     <script src="./js/app.js"></script>

@@ -35,7 +35,13 @@ jQuery(document).ready(function($) {
       responsive: {
         0: {
           items: 1,
-          nav: true
+          nav: false,
+          margin:120 
+        },
+        400:{
+          items:1,
+          nav:false,
+          margin:40,
         },
         480: {
           items: 1,
@@ -52,7 +58,8 @@ jQuery(document).ready(function($) {
           items: 3,
           nav: true,
           loop: true,
-          margin:30
+          margin:270,
+          padding:170
         }
       },
       responsiveRefreshRate: 200,
