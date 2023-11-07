@@ -46,15 +46,16 @@ jQuery(document).ready(function($) {
           nav: false
         },
         768: {
-          items: 2,
+          items: 3,
           nav: false,
           loop: true,
-          margin:5
+          margin:7
         },
         992: {
           items: 3,
           nav: false,
-          loop: true
+          loop: true,
+          margin:3
         }
       },
       responsiveRefreshRate: 200,

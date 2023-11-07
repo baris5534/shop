@@ -34,6 +34,12 @@ h4{
 header{
     width: 100%;
     height: 150px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    border-bottom: #0000007a 1px solid;
+    overflow-y:hidden ;
 }
 .container{
     max-width: 1440px;
@@ -44,9 +50,44 @@ header .container{
     justify-content: space-between;
     margin: auto;
 }
-header .leftnav{
+header .leftnav li a{
     /* width: 300px; */
-    
+    color: #000000;
+}
+header .leftnav input{
+    border-radius: 10px;
+    border-width: 0;
+    padding: 12px 30px;
+    background-position-x: 210px;
+    background-position-y: 12px;
+    background-repeat: no-repeat;
+    background-color: #505050;
+    color: #000000 80%;
+    font-size: 14px;
+}
+header .leftnav input :focus{
+    border: 0;
+}
+header .leftnav ul li{
+}
+header .search-icon{
+    background-image: url(../images/Vector\ \(2\).svg);
+    padding-left: 60px;
+    color: #000000 80%;
+}
+header .leftnav svg{
+   margin-left: -20;
+   padding-left: -20;
+}
+header .leftnav form ::placeholder{
+color: #000000;
+}
+header #menu .profile{
+    display: none;
+}
+.leftnav button{
+    border-style: none;
+    background-color: #fff;
 }
 header  ul li{
     list-style-type: none;
@@ -101,15 +142,74 @@ color: #000000;
 header #menu .profile{
     display: none;
 }
+.profile button{
+    border-style: none;
+    background-color: #fff;
+}
 .menu-toggle{
     display: none;
 }
+/* modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  #myModal form{
+    display: flex;
+    flex-direction: column;
+  }
+#myModal  input{
+    margin-top: 25px;
+    padding: 10px 30px;
+    color: #000000;
+  }
+  #myModal button{
+    width: 50%;
+    padding: 10px 10px;
+    margin: 10px auto;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+     display: flex;
+    justify-content: right;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+   
+  }
 /* Promotion */
 .promotion{
     width: 100%;
     height: 550px;
     background-color: #F7F6F0;
     cursor: pointer;
+    margin-top: 150px;
 }
 .promotion .container{
     display: grid;
@@ -431,7 +531,7 @@ header #menu .profile{
     display: flex;
   }
   .they-slider .slider2 .owl-cards2{
-    width: 80%;
+    width: 370px;
     height: 630px;
     background-color: #F7F6F0;
     align-items: center;
@@ -526,9 +626,9 @@ header #menu .profile{
     align-items: center;
 }
 .community-forms input[type="text"]{
-    width: 450px;
+    max-width: 100%;
     margin-top: 30px;
-    padding: 10px 6px;
+    padding: 2% 20%;
     border-radius: 4px;
     border-style: none;
 }
@@ -682,8 +782,56 @@ footer .liler ul~ul~ul{
     font-size: 16px;
     padding-top: 15px;
 }
+@media screen and (max-width:1280px) {
+    .container{
+        max-width: 1100px;
+        padding: 0 50px;
+    }
+    .promotion{
+        height: auto;
+    }
+    .promotion img{
+        max-width: 150px;
+    height: 300px;
+    }
+    .promotion .contents-text{
+        max-width: 300px;
+        
+    }
+    .promotion h1{
+        
+    }
+    .season-col{
+        height: auto;
+    }
+    .season-category{
+        grid-template-columns: 33% 33% 33%;
+    }
+    .season-category .card{
+        max-width: 300px;
+    }
+    .discount .container{
+        grid-template-columns: 20% 20% 30% 20%;
+    }
+    .discount img{
+        max-width: 200px;
+    }
+    .products .clothes-cards{
+        grid-template-columns: 33% 33% 33%;
+    }
+    .collections .collections-card{
+        grid-template-columns: 33% 33% 33%;
+    }
+    .collections .card-col1,.collec-cards,.cards-col{
+        max-width: 300px;
+    }
+    .guide{
+        margin-left: 50%;
+    }
+}
 
-@media screen and ( max-width: 1280px) and (min-width:431px){
+
+@media screen and ( max-width: 992px) and (min-width:431px){
     h1{
         font-size: 24px;
     }
@@ -703,6 +851,7 @@ footer .liler ul~ul~ul{
     header .container{
         grid-template-columns: 50% 50%;
         align-items: center;
+        display: flex;
         flex-direction: row-reverse;
         justify-content: space-between
     }
@@ -716,7 +865,9 @@ footer .liler ul~ul~ul{
         display: none;
     }
     nav .leftnav .menu-toggle{
-        float: right;
+        width: 100%;
+        display: flex;
+        justify-content: end;
        padding: 50px;
     }
     nav .leftnav .profile{
@@ -1044,7 +1195,6 @@ footer .liler ul~ul~ul{
 }
 
 
-    
 @media (max-width: 430px) {
     h1{
         font-size: 24px;
@@ -1088,6 +1238,15 @@ footer .liler ul~ul~ul{
     nav .logo~.profile{
         display: none;
     }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 10px;
+        border: 1px solid #888;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+      }
     /* nav .dropdown-btn{
         display: block;
         align-items: center;
@@ -1290,7 +1449,7 @@ footer .liler ul~ul~ul{
         align-items: center;
     }
     .discount .container{
-        grid-template-columns: 20% 40% 20%;
+        grid-template-columns: 20% 60% 20%;
         margin: auto;
        align-items: center;
     }
@@ -1532,6 +1691,8 @@ footer .liler ul~ul~ul{
     .community{
         height: auto;
         font-size: 12px;
+        padding: 50px 20px;
+        
     }
     .community .container{
         height: auto;
@@ -1545,10 +1706,13 @@ footer .liler ul~ul~ul{
     }
     .community .companys ul li{
         width: 100%;
-        height: 50px;
+        height: auto;
         font-size: 12px;
         margin-top: 0;
-        line-height: 20px;
+        line-height: normal;
+    }
+    .community .companys h1{
+        text-align: center;
     }
     .community .companys img{
         width: 14px;
@@ -1659,3 +1823,5 @@ footer .liler ul~ul~ul{
 
     
 }
+
+    

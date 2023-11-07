@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
         autoplay:false,  
         autoplayTimeout:1000,
         autoplayHoverPause:false,    
-    margin:30,
       items: 3,
       loop: true,
       center: false,
@@ -19,9 +18,7 @@ jQuery(document).ready(function($) {
       pullDrag: true,
       freeDrag: false,
   
-      margin: 20,
-      stagePadding: 0,
-  
+      margin: 5,
       merge: false,
       mergeFit: true,
       autoWidth: false,
@@ -55,11 +52,18 @@ jQuery(document).ready(function($) {
           margin:30
         },
         992: {
-          items: 3,
+          items: 2,
           nav: true,
           loop: true,
           margin:270,
           padding:170
+        },
+        1024:{
+          items: 3,
+          nav: true,
+          loop: true,
+          margin:30,
+          
         }
       },
       responsiveRefreshRate: 200,
