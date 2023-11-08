@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
       pullDrag: true,
       freeDrag: false,
   
-      margin: 5,
+      margin:0,
       merge: false,
       mergeFit: true,
       autoWidth: false,
@@ -33,12 +33,14 @@ jQuery(document).ready(function($) {
         0: {
           items: 1,
           nav: false,
-          margin:120 
+          margin:15,
+          stagePadding:0,
         },
         400:{
           items:1,
           nav:false,
-          margin:40,
+          margin:30,
+          stagePadding:10,
         },
         480: {
           items: 1,
@@ -59,12 +61,17 @@ jQuery(document).ready(function($) {
           padding:170
         },
         1024:{
+          items: 2,
+          nav: true,
+          loop: true,
+          margin:50,
+        },
+        1150:{
           items: 3,
           nav: true,
           loop: true,
-          margin:30,
-          
-        }
+          margin:150,
+        },
       },
       responsiveRefreshRate: 200,
       responsiveBaseElement: window,

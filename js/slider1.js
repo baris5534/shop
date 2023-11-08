@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       pullDrag: true,
       freeDrag: false,
   
-      margin: 5,
+      margin: 0,
       stagePadding: 0,
   
       merge: false,
@@ -38,12 +38,13 @@ jQuery(document).ready(function($) {
         0: {
           items: 1,
           nav: false,
-          margin:5,
-          stagePadding:3,
+          margin:25,
+          stagePadding:0,
         },
         480: {
-          items: 1,
-          nav: false
+          items: 3,
+          nav: false,
+          margin:5,
         },
         768: {
           items: 3,

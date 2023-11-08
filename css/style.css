@@ -33,7 +33,7 @@ h4{
 }
 header{
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #fff;
     position: fixed;
     z-index: 999;
@@ -93,7 +93,7 @@ header  ul li{
     list-style-type: none;
     display: inline-flex; 
     justify-content: space-between; 
-    padding: 65px 15px;  
+    padding: 45px  15px 0 0 ;  
 }
 header ul li a{
     text-decoration: none;
@@ -103,7 +103,7 @@ header ul li a{
 header .logo{
     font-size: 20px;
     align-items: center;
-    padding: 50px 20px;
+    padding: 25px 20px 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -125,7 +125,7 @@ header .profile input :focus{
     border: 0;
 }
 header .profile ul li{
-    padding: 55px 15px;
+    padding: 30px 15px 0 15px;
 }
 header .search-icon{
     background-image: url(../images/Vector\ \(2\).svg);
@@ -209,7 +209,7 @@ header #menu .profile{
     height: 550px;
     background-color: #F7F6F0;
     cursor: pointer;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .promotion .container{
     display: grid;
@@ -787,6 +787,59 @@ footer .liler ul~ul~ul{
         max-width: 1100px;
         padding: 0 50px;
     }
+    .modal {
+        display: none; 
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden; 
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4); 
+      }
+      
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+      #myModal form{
+        display: flex;
+        flex-direction: column;
+      }
+    #myModal  input{
+        margin-top: 25px;
+        padding: 10px 30px;
+        color: #000000;
+      }
+      #myModal button{
+        width: 50%;
+        padding: 10px 10px;
+        margin: 10px auto;
+        background-color: #505050;
+        border-radius: 10px;
+      }
+      .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+         display: flex;
+        justify-content: right;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+       
+      }
     .promotion{
         height: auto;
     }
@@ -818,12 +871,19 @@ footer .liler ul~ul~ul{
     }
     .products .clothes-cards{
         grid-template-columns: 33% 33% 33%;
+        padding: 0 20px;
     }
     .collections .collections-card{
         grid-template-columns: 33% 33% 33%;
     }
     .collections .card-col1,.collec-cards,.cards-col{
         max-width: 300px;
+    }
+    .companys{
+        padding: 0 20px;
+    }
+    .community-forms{
+        padding: 0 20px;
     }
     .guide{
         margin-left: 50%;
@@ -848,27 +908,47 @@ footer .liler ul~ul~ul{
         max-width: 1100px;
         padding: 0 50px;
     }
+    .lock{
+        display: block;
+    }
     header .container{
         grid-template-columns: 50% 50%;
         align-items: center;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between
+        justify-content: space-between;
     }
     header .logo{
         float: left;
         align-items:end ;
         text-align: center;
-        padding: 50px 0;
+        padding: 25px 0 0 0;
     }
     header #menu .profile{
         display: none;
+    }
+    header .leftnav input::placeholder{
+        width: 0;
+    }
+    header .leftnav input{
+        width: 10%;
+        padding: 12px 15px;
+        background-position-x: 50%;
+        background-position-y:50% ;
+        transition: all 0.3s;
+    }
+    header .leftnav input:focus{
+        width: 30%;
+        transition: all 0.5s;
+        background-position-x:95% ;
+        border-radius: 12px;
     }
     nav .leftnav .menu-toggle{
         width: 100%;
         display: flex;
         justify-content: end;
-       padding: 50px;
+        
+       /* padding: 25px 0 0 0; */
     }
     nav .leftnav .profile{
         
@@ -898,11 +978,12 @@ footer .liler ul~ul~ul{
         height: 25%;
     }
     .leftnav ul li{
+        
         transition: all .5s;
         /* scroll-behavior: none; */
        display: flex;
        flex-direction: column;
-       padding-top: 0px;
+       padding: 15px 0;
     }
     .menu-toggle{
         display: block;
@@ -910,10 +991,8 @@ footer .liler ul~ul~ul{
         cursor: pointer;
         transition: all .5s;
         z-index: 2;
-        align-items: start;
         text-align: left;
-        
-        
+        padding: 20px 0 0 0;
     }
     #menu{
         display: block;
@@ -959,6 +1038,7 @@ footer .liler ul~ul~ul{
 }
 .promotion img{
     width: 70%;
+    height: fit-content;
     height:   auto;
     object-fit: contain;
     margin: auto;
@@ -1139,6 +1219,7 @@ footer .liler ul~ul~ul{
     .community-forms{
         max-width: 350px;
         margin: 10px;
+        
     }
     .community-forms input[type="text"]{
         width: 90%;
@@ -1273,7 +1354,7 @@ footer .liler ul~ul~ul{
         /* scroll-behavior: none; */
        display: flex;
        flex-direction: column;
-       padding-top: 0px;
+       padding: 10px 0;
     }
     .menu-toggle{
         display: block;
@@ -1432,13 +1513,17 @@ footer .liler ul~ul~ul{
     .best-seller{
         height: 700px;
     }
-    .best-seller #owl-demo-2 .item{
+    .best-seller .owl-stage-outer .owl-item{
         width: 310px;
+        margin: 0 0 0 20px;
     }
     .best-seller  .owl-stage-outer .owl-stage .owl-item{
         width: 320px;
     }
-
+    .best-seller .owl-carousel .owl-item{
+        /* width: 280px !important; */
+        margin: 0 0 0 10px !important;
+    }
 
     /* discount */
     .discount{
@@ -1511,9 +1596,11 @@ footer .liler ul~ul~ul{
         color: #000000;
     }
     .clothes-cards .wrapper .owl-item{
-        width: 230px;
+        width: 230px !important;
         height: 250px;
         color: #000000;
+        margin-left: 0px;
+        margin-right: 42px !important;
     }
     .clothes-cards .clt-card{
         display: none;
@@ -1522,8 +1609,11 @@ footer .liler ul~ul~ul{
         display: block;
     }
     .clothes-cards .wrapper{
-        height: auto;
+        max-height: 400px;
         margin-top: 5%;
+    }
+    .clothes-cards .wrapper .owl-carousel,.clothes-cards .owl-stage-outer{
+        max-height: 400px;
     }
     .clothes-cards .clt-card a{
         text-decoration: none;
@@ -1565,13 +1655,28 @@ footer .liler ul~ul~ul{
         height: 450px;
         flex-direction: row;
     }
+    .collections .wrapper .owl-stage-outer .owl-stage{
+        height: 700px;
+        padding: 0 40px !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .collections .wrapper .card-col1{
-        width: 95%;
+        width: 310px;
+        margin: 0  0 0 0;
         height: 450px;
     }
+    /* .collections .wrapper .card-col1{
+        width: 95%;
+        
+    } */
     .collections .wrapper .owl-stage-outer .owl-item{
         width: 400px;
+        margin: 0 0 0 0;
     }
+    /* .collections .wrapper .owl-stage-outer .owl-item{
+        width: 400px;
+    } */
     .collections .wrapper .collec-cards{
         width: 90%;
         height: 350px;
@@ -1681,6 +1786,14 @@ footer .liler ul~ul~ul{
         width: 20px;
         background-repeat: no-repeat;
       }
+      .they-slider .slider2 .owl-item{
+        margin: 0 20px 0 0 ;
+      }
+      .they-said .slider2 .owl-cards2{
+        width: 100%;
+        /* margin-left: 120px;
+        margin-right: 60px; */
+    }
       .they-slider .slider2 .owl-stage-outer{
         height: 650px;
       }
@@ -1691,7 +1804,7 @@ footer .liler ul~ul~ul{
     .community{
         height: auto;
         font-size: 12px;
-        padding: 50px 20px;
+        padding: 50px 10px;
         
     }
     .community .container{
@@ -1719,31 +1832,50 @@ footer .liler ul~ul~ul{
     }
     .community .companys{
         height: auto;
+        padding: 0;
     }
     .community .col-hr{
         display: none;
     }
     .community-forms{
         width: 100%;
+        font-size: 10px;
+        padding: 0;
+    }
+    .community-forms .or{
+        align-items: center;
+    }
+    .community-forms a{
+        width: 90px;
+        height: auto;
+    }
+    .community-forms ::placeholder{
+        font-size: 10px;
     }
     .community-forms .chech{
         font-size: 11px;
+        height: auto;
+    }
+    .chech input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
     }
     .community-forms input[type="text"]{
         width: 90%;
+        font-size: 10px;
     }
     .community .social-btn img{
         width: 25px;
     }
     .community .social-btn a{
         height: auto;
-        font-size: 12px;
+        font-size: 10px;
         width: 80%;
     }
     .community .social-btn a~a{
         height: auto;
-        width: 90%;
-        font-size: 12px;
+        width: 80%;
+        font-size: 10px;
     }
     /* footer */
     footer{
@@ -1824,4 +1956,68 @@ footer .liler ul~ul~ul{
     
 }
 
-    
+    @media (max-width:395px) {
+        .collections .wrapper .owl-stage-outer .owl-item{
+            width: 350px;
+            margin: 0 0 0 0;
+        }
+        .collections .wrapper .card-col1{
+            width: 310px;
+            margin: 0  0 0 0;
+        }
+
+        .clothes-cards .wrapper .owl-item{
+            width: 200px !important;
+            height: 250px;
+            color: #000000;
+            margin-left: 0px;
+            margin-right: 55px !important;
+        }
+    }
+
+    @media (max-width:380px) {
+        .collections .wrapper .owl-stage-outer .owl-item{
+            width: 350px;
+            margin: 0 0 0 0;
+        }
+        .collections .wrapper .card-col1{
+            width: 310px;
+            margin: 0  0 0 0;
+        }
+
+        .clothes-cards .wrapper .owl-item{
+            width: 200px !important;
+            height: 250px;
+            color: #000000;
+            margin-left: 0px;
+            margin-right: 40px !important;
+        }
+
+        .they-said .container{
+            overflow-x: hidden;
+        }
+        .they-said .slider2 .owl-stage-outer{
+            max-width: 100%;
+
+        }
+        .they-said .slider2 .owl-stage-outer .owl-item{
+            max-width: 100%;
+            width: 350px;
+            margin: 0 60px 0 0 ;
+        }
+        .they-said .slider2 .owl-cards2{
+            width: 350px;
+            /* margin-left: 120px;
+            margin-right: 60px; */
+        }
+    }
+
+    @media (max-width:360px) {
+        .clothes-cards .wrapper .owl-item{
+            width: 185px !important;
+            height: 250px;
+            color: #000000;
+            margin-left: 0px;
+            margin-right: 42px !important;
+        }
+    }
