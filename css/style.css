@@ -948,7 +948,7 @@ footer .liler ul~ul~ul{
         display: flex;
         justify-content: end;
         
-       /* padding: 25px 0 0 0; */
+       padding: 50px;
     }
     nav .leftnav .profile{
         
@@ -1021,11 +1021,7 @@ footer .liler ul~ul~ul{
     align-items: center;
     align-self: center;
     align-content: center;
-    
     display: flex;
-}
-.promotion h1,h2,h3{
-    
 }
 .promotion .container{
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -1034,13 +1030,17 @@ footer .liler ul~ul~ul{
 }
 .promotion .container .contents-text{
     width: 100%;
-    font-size: 12px;
+}
+.promotion .contents-text h1{
+    font-size: 20px;
+}
+.promotion .contents-text h2{
+    font-size: 18px;
+}
+.promotion .contents-text h3{
+    font-size: 14px;
 }
 .promotion img{
-    width: 70%;
-    height: fit-content;
-    height:   auto;
-    object-fit: contain;
     margin: auto;
 }
 
@@ -1313,8 +1313,21 @@ footer .liler ul~ul~ul{
        display: flex;
        justify-content: end;
     }
-    nav .leftnav .profile{
-        
+    header .leftnav input::placeholder{
+        width: 0;
+    }
+    header .leftnav input{
+        width: 10%;
+        padding: 12px 15px;
+        background-position-x: 50%;
+        background-position-y:50% ;
+        transition: all 0.3s;
+    }
+    header .leftnav input:focus{
+        width: 50%;
+        transition: all 0.5s;
+        background-position-x:95% ;
+        border-radius: 12px;
     }
     nav .logo~.profile{
         display: none;
